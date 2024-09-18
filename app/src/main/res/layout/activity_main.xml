@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2003A9F4"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Registrarte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:hapticFeedbackEnabled="false"
+        android:scrollbarSize="4dp"
+        android:text="Registrarte"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Es rápido y facil"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/Registrarte"
+        app:layout_constraintTop_toBottomOf="@+id/Registrarte" />
+
+    <EditText
+        android:id="@+id/Nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:text="Nombre"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/Text"
+        app:layout_constraintTop_toBottomOf="@+id/Text" />
+
+    <EditText
+        android:id="@+id/Apellido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:ems="10"
+        android:text="Apellido"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Nombre"
+        app:layout_constraintStart_toEndOf="@+id/Nombre"
+        app:layout_constraintTop_toTopOf="@+id/Nombre" />
+
+    <EditText
+        android:id="@+id/celularocorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:ems="21"
+        android:inputType="textEmailAddress"
+        android:scrollbarSize="8dp"
+        android:text="Numero de celular o correo electrónico"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/Nombre"
+        app:layout_constraintTop_toBottomOf="@+id/Nombre" />
+
+    <EditText
+        android:id="@+id/Contraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:ems="21"
+        android:inputType="textPassword"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/celularocorreo"
+        app:layout_constraintTop_toBottomOf="@+id/celularocorreo" />
+
+    <TextView
+        android:id="@+id/Fecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Fecha de Nacimiento"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/Contraseña"
+        app:layout_constraintTop_toBottomOf="@+id/Contraseña" />
+
+    <TextView
+        android:id="@+id/Genero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/editTextText3"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText3"
+        tools:text="Género" />
+
+    <EditText
+        android:id="@+id/editTextText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="21"
+        android:inputType="text"
+        android:text="Name"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/Fecha"
+        app:layout_constraintTop_toBottomOf="@+id/Fecha" />
+
+    <RadioButton
+        android:id="@+id/Mujer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Mujer"
+        app:layout_constraintStart_toStartOf="@+id/Genero"
+        app:layout_constraintTop_toBottomOf="@+id/Genero" />
+
+    <RadioButton
+        android:id="@+id/Hombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Hombre"
+        app:layout_constraintBottom_toBottomOf="@+id/Mujer"
+        app:layout_constraintStart_toEndOf="@+id/Mujer"
+        app:layout_constraintTop_toTopOf="@+id/Mujer" />
+
+    <RadioButton
+        android:id="@+id/Personalizado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Personalizado"
+        app:layout_constraintBottom_toBottomOf="@+id/Hombre"
+        app:layout_constraintStart_toEndOf="@+id/Hombre"
+        app:layout_constraintTop_toTopOf="@+id/Hombre" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="32dp"
+        android:text="Es posible que las personas que usan nuestro servicio hayan subido tu información de contacto a facebook. Más información"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Hombre" />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Al hacer clic en &quot;Registrarte&quot; aceptas nuestras Condiciones, la Política de Privacidad y la Politica de cookies. Es posible que te enviemos notificaciones por SMS, que puedes desactivar cuando quieras."
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/text1"
+        app:layout_constraintTop_toBottomOf="@+id/text1" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="149dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#20D82F"
+        android:text="Registrarte"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
